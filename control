@@ -1,0 +1,26 @@
+Source: badwolf
+Section: web
+Priority: optional
+Maintainer: craig@bodhilinux.com
+Build-Depends:
+ debhelper-compat (=13), 
+ libwebkit2gtk-4.1-dev | libwebkit2gtk-4.0-dev, 
+ libxml2-dev, 
+ ed
+Standards-Version: 4.7.2
+Homepage: https://hacktivis.me/projects/badwolf
+Rules-Requires-Root: no
+
+Package: badwolf
+Architecture: any
+Depends:
+ ${misc:Depends},  ${shlibs:Depends},
+ libwebkit2gtk-4.1-0 | libwebkit2gtk-4.0-0
+Recommends:
+ gstreamer1.0-gl
+Description: BadWolf is a minimalist and privacy-oriented WebKitGTK+ browser.
+ No browser-level tracking, multiple ephemeral isolated sessions per new unrelated tabs, JavaScript off by default
+ Small codebase (~1 500 LoC), reuses existing components when available or makes them available
+ WebKitGTK native extensions, Interface customizable through CSS
+ Stable User-Interface; The common shortcuts are available, no vi-modal edition or single-key shortcuts are used
+ Dialogs are only used when required (save file, print, …), javascript popups open in a background tab 
