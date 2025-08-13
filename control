@@ -3,7 +3,6 @@ Section: web
 Priority: optional
 Maintainer: craig@bodhilinux.com
 Build-Depends:
- debhelper-compat (=13), 
  libwebkit2gtk-4.1-dev | libwebkit2gtk-4.0-dev, 
  libxml2-dev, 
  ed
