@@ -1,8 +1,9 @@
-badwolf (1.3.0-1) UNRELEASED; urgency=medium
+badwolf (1.4.0-1) UNRELEASED; urgency=medium
 
-  * Bump to upstream version 1.3
+  * Bump package to upstream release version 1.4
 
- -- craig <craig@bodhilinux.com>  Mon, 11 Aug 2025 17:06:47 -0700
+ -- craig <craig@bodhilinux.com>  Thu, 14 Aug 2025 16:20:42 -0700
+
 badwolf (1.0.3-4) unstable; urgency=medium
 
   * Fix manage-favorites script. It properly saves links to Favorites now.
