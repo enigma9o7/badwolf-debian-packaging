@@ -1,8 +1,10 @@
-badwolf (1.4.0-1) UNRELEASED; urgency=medium
+badwolf (1.4.0-1) unstable; urgency=medium
 
-  * Bump package to upstream release version 1.4
+  * Bump package to upstream release version 1.4.0
+  * Removed google search (requires java), favorites, and twitter from startpage.
+  * Change Alt-D from `close tab` to `put cursor in address bar` (to match firefox/chromium)
 
- -- craig <craig@bodhilinux.com>  Thu, 14 Aug 2025 16:20:42 -0700
+ -- Craig <craig@bodhilinux.com>  Thu, 14 Aug 2025 16:20:42 -0700
 
 badwolf (1.0.3-4) unstable; urgency=medium
 
