@@ -1,0 +1,12 @@
+Change Alt-D keybinding to put cursor in address bar
+--- a/keybindings.c
++++ b/keybindings.c
+@@ -137,7 +137,7 @@
+ 	{
+ 		if((browser != NULL) && (((GdkEventKey *)event)->keyval == GDK_KEY_d))
+ 		{
+-			webkit_web_view_try_close(browser->webView);
++			gtk_widget_grab_focus(browser->location);
+ 			return TRUE;
+ 		}
+ 

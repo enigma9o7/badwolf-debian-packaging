@@ -1,0 +1,12 @@
+Set homepage to /usr/share/badwolf/startpage.html
+--- a/uri.c
++++ b/uri.c
+@@ -11,7 +11,7 @@
+ const gchar *
+ badwolf_ensure_uri_scheme(const gchar *text, gboolean try_file)
+ {
+-	const gchar *fallback = "about:blank";
++	const gchar *fallback = "file:///usr/share/badwolf/startpage.html";  //upstream uses about:blank
+ 	char *path            = NULL;
+ 
+ 	if(g_strcmp0(text, "") <= 0) return fallback;
