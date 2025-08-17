@@ -1,4 +1,4 @@
-Set homepage to /usr/share/badwolf/startpage.html
+Change fallback page from about:blank to a local file
 --- a/uri.c
 +++ b/uri.c
 @@ -11,7 +11,7 @@
