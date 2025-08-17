@@ -1,4 +1,4 @@
-Change fallback page from about:blank to a local file
+Change fallback page from blank to local file 
 --- a/uri.c
 +++ b/uri.c
 @@ -11,7 +11,7 @@
@@ -10,3 +10,14 @@ Change fallback page from about:blank to a local file
  	char *path            = NULL;
  
  	if(g_strcmp0(text, "") <= 0) return fallback;
+--- a/uri_test.c
++++ b/uri_test.c
+@@ -11,7 +11,7 @@
+ static void
+ badwolf_ensure_uri_scheme_test(void)
+ {
+-	const gchar *fallback = "about:blank";
++	const gchar *fallback = "file:///usr/share/badwolf/startpage.html";
+ 
+ 	struct
+ 	{
