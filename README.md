@@ -1,4 +1,4 @@
-This is the main branch that builds upstream version with patch to set startpage.
+This is the main branch that builds upstream version without a patch to set startpage.
 There are branches for Bodhi & AntiX on this repo also available thatuse custom startpage and to build them is the same, other than specifying the branch when cloning this repo.
 
 The following should build and install the unsigned package on any debian based distro. 
