@@ -13,7 +13,7 @@ wget https://distfiles.hacktivis.me/releases/badwolf/badwolf-1.4.0.tar.gz -O bad
 tar xf badwolf_1.4.0.orig.tar.gz                                                                       
 cd badwolf-1.4.0
 # get the packaging files I made (debian folder):
-git clone https://github.com/enigma9o7/badwolf-debian-packaging -b bodhi debian
+git clone https://github.com/enigma9o7/badwolf-debian-packaging debian
 # Install the build dependencies for this package I defined in control file:
 sudo mk-build-deps --install --remove
 # Build unsigned packages:
