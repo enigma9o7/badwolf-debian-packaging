@@ -1,52 +1,7 @@
 badwolf (1.4.0-1) unstable; urgency=medium
 
-  * Bump package to upstream release version 1.4.0
-  * Removed google search, favorites, and twitter from startpage.
-  * Change Alt-D from `close tab` to `put cursor in address bar`
+  * First package for Bodhi
+  * Patch to Change Alt-D from `close tab` to `put cursor in address bar`
+  * Patch to open new tabs with startpage.html
 
- -- Craig <craig@bodhilinux.com>  Thu, 14 Aug 2025 16:20:42 -0700
-
-badwolf (1.0.3-4) unstable; urgency=medium
-
-  * Fix manage-favorites script. It properly saves links to Favorites now.
-  * Made starpage.html look "cooler".
-  * Search in startpage defaults to ddg, but google is also an option.
-
- -- nXecure <not@telling.you>  Tue, 27 Oct 2020 15:35:57 +0100
-
-badwolf (1.0.3-3) unstable; urgency=medium
-
-  * Now the script creates a folder in $HOME/.config/badwolf/
-  * It will copy over the startpage.html the first time it launches.
-  * Every new tab will open the startpage.html file.
-  * Added a gui based on yad to manage favorite links.
-  * You can edit favorite links with Control+b from inside badwolf
-
- -- nXecure <not@telling.you>  Sun, 25 Oct 2020 18:46:08 +0200
-
-badwolf (1.0.3-2) unstable; urgency=medium
-
-  * Added startpage.html for antiX release (thank PPC, he made it possible)
-
- -- nXecure <not@telling.you>  Sat, 17 Oct 2020 11:30:56 +0200
-
-badwolf (1.0.3-1) unstable; urgency=medium
-
-  * Updated to latest git version
-  * Added new dependency libxml2
-
- -- nXecure <not@telling.you>  Sun, 04 Oct 2020 22:10:34 +0200
-
-badwolf (1.0.2-2) unstable; urgency=medium
-
-  * Updated to latest git version
-
- -- nXecure <not@telling.you>  Mon, 18 Aug 2020 22:05:15 +0200
-
-badwolf (1.0.2-1) unstable; urgency=medium
-
-  * Initial release
-  * Fix build problem (installing bin in wrong directory)
-  * Changed to debian standard directory paths
-
- -- nXecure <not@telling.you>  Mon, 17 Aug 2020 13:18:04 +0200
+ -- Craig <craig@bodhilinux.com>  Sat, 8 Nov 2025 16:20:42 -0800
