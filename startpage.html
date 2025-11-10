@@ -1,76 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>BadWolf Startpage</title>
-<header>
-<style>
-.button{
+<style type="text/css">
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: left;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+#pagenav {
+	padding: 15px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #b1c75c;
+}
+#pagenav a {
+	margin: 0 1% 0 1%;
+}
+#pagenav a:link, #pagenav a:active, #pagenav a:visited {
+	background-color: #b1c75c;
+	color: #ffffff;
+	text-decoration: none;
+}
+#pagenav a:hover {
+	background-color: #b1c75c;
+	color: #333333;
+	text-decoration: none;
+}
+#searchbox {
+	align-items: center;
+	display: flex;
+	max-width: 625px;
+	width: auto;
+	margin: 0 auto;
+}
+#searchinput {
+	width: 80%;
+	border: solid #ccc; 
+	border-width: 1px 1px 1px 1px;
+	border-radius: 2px 0 0 2px;
+	flex: 1; 
+	font-size: 16px;
+	font-weight: 200;
+	height: 33px;
+	margin: 0; 
+	min-width: 90px;
+	padding: 5px;
+	-webkit-appearance: textfield;
+}
+input:focus {
+	background-color: #ffffcc;	
+}
+h1 {
+	padding: 10px;
+	margin: 0 0 50px 0;
+	text-align: center;
+	background-color: #5a860a;
+	color: #f3f3f3;
+}
+#buttons {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+#button {
 	background-color: #f5f5f5;
-	border:none;
-	font-size:15px;
+	border: 3px solid #d8d8d8;
+	font-size: 15px;
 	padding: 10px 20px;
-	margin:5px;
-	border-radius:4px;
-	outline:none;
+	margin: 5px;
+	border-radius: 10px;
+	outline: none;
 }
-.button:hover{
-	border: 1px solid #c8c8c8;
-	padding: 9px 19px;
-	color:#25617E;
+#button:hover {
+	background-color: #ffffcc;
+	border: 3px solid #5a860a;
+	color: #25617E;
 }
-.button:focus{
-	border:1px solid #4885ed;
+#button:focus {
+	border: 3px solid #5a860a;
 	padding: 9px 19px;
+}
+h2 {
+	text-align: left;
+	text-align: center;	
+}
+#keybindbox {
+	margin-top: 50px;
+}
+#keybindinfo {
+	border: 3px solid #5a860a;
+	max-width: 90%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 15px 15px 15px;
+	text-align:left;
+	background-color: #f3f3f3;
 }
 </style>
-</header>
+</head>
 <body>
-<div style="margin: 0 auto; text-align:center; margin-left:10px; margin-right: 10px;">
-	<a href="https://www.bodhilinux.com/">Bodhi</a> 
-	<a href="https://bodhilinux.boards.net/">Forum</a> 
-	<a href="https://discord.com/invite/pvB7MSf">Chat</a> 
-	<a href="https://www.bodhilinux.com/w/wiki">Wiki</a> 
-	<a href="https://www.bodhilinux.com/a">Appcenter</a> 
-	<a href="https://facebook.com/bodhilinux">Facebook</a> 
-	<a href="https://hacktivis.me/projects/badwolf">BadWolf</a> 
+<div id="pagenav">
+	<a href="https://www.bodhilinux.com/">Bodhi Linux</a>
+	<a href="https://bodhilinux.boards.net/">Forum</a>
+	<a href="https://discord.com/invite/pvB7MSf">Chat</a>
+	<a href="https://www.bodhilinux.com/w/wiki">Wiki</a>
+	<a href="https://www.bodhilinux.com/a">Appcenter</a>
+	<a href="https://facebook.com/bodhilinux">Facebook</a>
+	<a href="https://hacktivis.me/projects/badwolf">BadWolf</a>
 </div>
-<h1 style="text-align: center;">BadWolf Browser for Bodhi Linux</h1>
+<h1>BadWolf Browser for Bodhi Linux</h1>
 <form method="get" action="https://html.duckduckgo.com/html/">
-	<div id="search" style="align-items: center; display: flex;
-	max-width: 600px; width:auto; margin:0 auto">
-		<input aria-label="Search" id="search-input" placeholder="Search..." 
-		speech type="search" name="q" style="border: solid #ccc; 
-		border-width: 1px 1px 1px 1px; border-radius: 2px 0 0 2px; flex: 1; 
-		font-size: 16px; font-weight: 200; height: 33px; margin: 0; 
-		min-width: 90px; padding: 5px; -webkit-appearance: textfield;" autofocus />
+	<div id="searchbox">
+		<input aria-label="Search" id="searchinput" placeholder="Search..." speech="" type="search" name="q" autofocus="">
 	</div>
-	<div class="buttons" style="margin-top:10px; width: 100%; text-align: center;">
-		<input type="submit" value="DuckDuckGo" class="button"/>
-<!--		<input type="submit" value="Google" class="button" formaction="http://www.google.com/search"/>  -->
+	<div id="buttons">
+		<input type="submit" value="DuckDuckGo" id="button">
+		<!--<input type="submit" value="Google" class="button" formaction="http://www.google.com/search"/>-->
 	</div>
 </form>
-<div style="max-width: 800px; display: inline-block; vertical-align: top; margin: 20px; text-align:left">
-<h2 style="text-align: left">⌨ Default Keybindings ⌨  </h2>
-	<b>Esc</b> - Stops loading the content in the current tab or escapes search<br>
-	<b>F1</b> - Shows the about dialog<br>
-	<b>F5</b> - Reloads the content in the current tab without clearing cache<br>
-	<b>F7</b> - Toggles caret browsing<br>
-	<b>F12</b> - Opens the web inspector<br>
-	<b>Alt-i</b> - Enables/disables Image loading for the current tab(requires refresh)<br>
-	<b>Alt-j</b> - Enables/disables Javascript for the current tab (requires refresh)<br>
-	<b>Alt-No.</b> Where No. is any numeric-row key.  Go to the n-th tab, 0 goes to the last one<br>
-	<b>Alt-Left/Right</b> - Go to the previous/next tab<br>
-	<b>Ctrl-Scroll</b> - Zooms the webpage in/out<br>
-	<b>Ctrl-0</b> - Resets webpage zoom to 100%<br>
-	<b>Ctrl-t</b> - Creates a new tab<br>
-	<b>Ctrl-F4</b> - Closes the current tab<br>
-	<b>Ctrl-f</b> - Focuses on the search entry (search inside page)<br>
-	<b>Ctrl-g/G</b> - When search box is focused it goes to the Next/Previous search term<br>
-	<b>Ctrl-l</b> - Focuses on the location(URL) entry<br>
-	<b>Ctrl-[/]</b> - Go back/forward in current tab’s history<br>
-	<b>Ctrl-p</b> - Print the current page. (spawns a dialog)<br>
-	<b>Ctrl-PgDn/PgUp</b> - Go to the previous/next tab<br>
-	<b>Ctrl-r/R</b> - Reloads the content in the current tab (with/without clearing cache)<br>
+<div align="center" id="keybindbox">
+	<div id="keybindinfo">
+		<h2>&#9000; Default Keybindings &#9000;</h2>
+		<b>Esc</b> - Stops loading the content in the current tab or escapes search<br>
+		<b>F1</b> - Shows the about dialog<br>
+		<b>F5</b> - Reloads the content in the current tab without clearing cache<br>
+		<b>F7</b> - Toggles caret browsing<br>
+		<b>F12</b> - Opens the web inspector<br>
+		<b>Alt-i</b> - Enables/disables Image loading for the current tab (requires refresh)<br>
+		<b>Alt-j</b> - Enables/disables Javascript for the current tab (requires refresh)<br>
+		<b>Alt-No.</b> Where No. is any numeric-row key. Go to the n-th tab, 0 goes to the last one<br>
+		<b>Alt-Left/Right</b> - Go to the previous/next tab<br>
+		<b>Ctrl-Scroll</b> - Zooms the webpage in/out<br>
+		<b>Ctrl-0</b> - Resets webpage zoom to 100%<br>
+		<b>Ctrl-t</b> - Creates a new tab<br>
+		<b>Ctrl-F4</b> - Closes the current tab<br>
+		<b>Ctrl-f</b> - Focuses on the search entry (search inside page)<br>
+		<b>Ctrl-g/G</b> - When search box is focused it goes to the Next/Previous search term<br>
+		<b>Ctrl-l</b> - Focuses on the location (URL) entry<br>
+		<b>Ctrl-[/]</b> - Go back/forward in current tab's history<br>
+		<b>Ctrl-p</b> - Print the current page (spawns a dialog)<br>
+		<b>Ctrl-PgDn/PgUp</b> - Go to the previous/next tab<br>
+		<b>Ctrl-r/R</b> - Reloads the content in the current tab (with/without clearing cache)<br>
+	</div>
 </div>
-</div>
-</body>
-</html>
+
+</body></html>
