@@ -4,4 +4,4 @@ badwolf (1.4.0-1) unstable; urgency=medium
   * Patch to Change Alt-D from `close tab` to `put cursor in address bar`
   * Patch to open new tabs with startpage.html
 
- -- Craig <craig@bodhilinux.com>  Sat, 8 Nov 2025 16:20:42 -0800
+ -- Craig Langman <craig@bodhilinux.com>  Sat, 8 Nov 2025 16:20:42 -0800
