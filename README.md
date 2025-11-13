@@ -1,5 +1,7 @@
-This is the main branch that builds upstream version without a patch to set startpage.
-There are branches for Bodhi & AntiX on this repo also available thatuse custom startpage and to build them is the same, other than specifying the branch when cloning this repo.
+This is the main branch that builds upstream version (without distro specific startpage).
+There are branches for Bodhi & AntiX on this repo also available that use custom startpage and to build them is the same, other than specifying the branch when cloning this repo, i.e. for bodhi:
+`git clone https://github.com/enigma9o7/badwolf-debian-packaging --branch bodhi badwolf-1.4.0/debian`
+.
 
 The following should build and install the unsigned package on any debian based distro. 
 Please report any issues.
@@ -11,12 +13,12 @@ sudo apt install wget git devscripts equivs
 cd /tmp # optional
 wget https://distfiles.hacktivis.me/releases/badwolf/badwolf-1.4.0.tar.gz -O badwolf_1.4.0.orig.tar.gz  
 tar xf badwolf_1.4.0.orig.tar.gz                                                                       
-cd badwolf-1.4.0
 # get the packaging files I made (debian folder):
-git clone https://github.com/enigma9o7/badwolf-debian-packaging debian
+git clone https://github.com/enigma9o7/badwolf-debian-packaging badwolf-1.4.0/debian
 # Install the build dependencies for this package I defined in control file:
-sudo mk-build-deps --install --remove
+sudo mk-build-deps --install --remove badwolf-1.4.0/debian/control
 # Build unsigned packages:
+cd badwolf-1.4.0
 dpkg-buildpackage -us -uc                
 # Install badwolf package you just built:                                        
 sudo apt install ../badwolf_1.4.0-1_*.deb
