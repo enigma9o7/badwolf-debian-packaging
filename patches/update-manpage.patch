@@ -1,0 +1,13 @@
+Man page grammar correction to satisfy lintian
+(upstream commit c39bbd4313740a2da380016d4296d6975b31749f )
+--- a/badwolf.1
++++ b/badwolf.1
+@@ -107,7 +107,7 @@
+ .Pp
+ .Bl -tag -width Ds -compact
+ .It Pa ${XDG_CONFIG_HOME:-$HOME/.config}/badwolf/content-filters.json
+-WebKit-specific content-filter file, this allows to block unwanted content (ads, nagware, ...).
++WebKit-specific content-filter file for blocking unwanted content (ads, nagware, ...).
+ For some introductory information about the format see:
+ .Lk https://webkit.org/blog/3476/content-blockers-first-look/
+ .Lk https://webkit.org/blog/4062/targeting-domains-with-content-blockers/
