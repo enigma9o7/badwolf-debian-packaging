@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BadWolf Startpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
+
+        .nav {
+            background-color: #b1c75c;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav a {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin: 5px 12px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 40px; 
+            gap: 20px;
+        }
+
+        .main-content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .image {
+            max-width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .center-content {
+            flex: 1;
+            min-width: 280px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .center-content h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            border: 1px solid #ccc;
+            border-radius: 2px 0 0 2px;
+            flex: 1;
+            font-size: 16px;
+            font-weight: 200;
+            height: 33px;
+            margin: 0;
+            min-width: 90px;
+            padding: 5px;
+            -webkit-appearance: textfield;
+        }
+
+        .buttons {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #f5f5f5;
+            border: solid 1px #777777;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            border: 1px solid #c8c8c8;
+            padding: 9px 19px;
+            color: #25617E;
+        }
+
+        .button:focus {
+            border: 1px solid #4885ed;
+            padding: 9px 19px;
+        }
+
+        .keybindings{
+            max-width: 650px; 
+            display: inline-block;
+            vertical-align: top; 
+            align-self: center;
+            margin: 20px; 
+            padding-left: 10px;
+            padding-bottom: 10px;
+            text-align:left;
+            background-color:#eaeaea;
+            border: solid 1px #777777;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <a href="https://www.bodhilinux.com/">Bodhi</a>
+        <a href="https://bodhilinux.boards.net/">Forum</a>
+        <a href="https://discord.com/invite/pvB7MSf">Chat</a>
+        <a href="https://www.bodhilinux.com/w/wiki">Wiki</a>
+        <a href="https://www.bodhilinux.com/a">Appcenter</a>
+        <a href="https://facebook.com/bodhilinux">Facebook</a>
+        <a href="https://hacktivis.me/projects/badwolf">BadWolf</a>
+    </div>
+
+    <div class="main">
+        <div class="main-content-wrapper">
+
+            <img src="https://www.bodhilinux.com/trial/wp-content/uploads/2015/02/bodhilogo-simple.png"
+                 alt="Bodhi Logo"
+                 class="image">
+
+            <div class="center-content">
+                <h1>BadWolf Browser for Bodhi Linux</h1>
+
+                <form method="get" action="https://html.duckduckgo.com/html/">
+                    <div class="search">
+                        <input aria-label="Search" class="search-input" placeholder="Search..." 
+                               speech type="search" name="q" autofocus>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="DuckDuckGo" class="button"/>
+                    </div>
+                </form>
+            </div>
+
+            <img src="https://hacktivis.me/images/avatar_HD.png"
+                 alt="BadWolf Logo"
+                 class="image">
+        </div>
+
+    <div class="keybindings">
+    <h2 style="text-align: center; margin-bottom: 10px;">⌨ Default Keybindings ⌨  </h2>
+	<b>Esc</b> - Stops loading the content in the current tab or escapes search<br>
+	<b>F1</b> - Shows the about dialog<br>
+	<b>F5</b> - Reloads the content in the current tab without clearing cache<br>
+	<b>F7</b> - Toggles caret browsing<br>
+	<b>F12</b> - Opens the web inspector<br>
+	<b>Alt-i</b> - Enables/disables Image loading for the current tab(requires refresh)<br>
+	<b>Alt-j</b> - Enables/disables Javascript for the current tab (requires refresh)<br>
+	<b>Alt-No.</b> Where No. is any numeric-row key.  Go to the n-th tab, 0 goes to the last one<br>
+	<b>Alt-Left/Right</b> - Go to the previous/next tab<br>
+	<b>Ctrl-Scroll</b> - Zooms the webpage in/out<br>
+	<b>Ctrl-0</b> - Resets webpage zoom to 100%<br>
+	<b>Ctrl-t</b> - Creates a new tab<br>
+	<b>Ctrl-F4</b> - Closes the current tab<br>
+	<b>Ctrl-f</b> - Focuses on the search entry (search inside page)<br>
+	<b>Ctrl-g/G</b> - When search box is focused it goes to the Next/Previous search term<br>
+	<b>Ctrl-l</b> - Focuses on the location(URL) entry<br>
+	<b>Ctrl-[/]</b> - Go back/forward in current tab’s history<br>
+	<b>Ctrl-p</b> - Print the current page. (spawns a dialog)<br>
+	<b>Ctrl-PgDn/PgUp</b> - Go to the previous/next tab<br>
+	<b>Ctrl-r/R</b> - Reloads the content in the current tab (with/without clearing cache)<br>
+</div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
+
