@@ -9,7 +9,7 @@ Please report any issues.
 ```bash
 # Install packaging tools etc
 sudo apt install wget git devscripts equivs
-# Get upstream source tarball, extract it, and enter dir:
+# Get upstream source tarball and extract it:
 cd /tmp # optional
 wget https://distfiles.hacktivis.me/releases/badwolf/badwolf-1.4.0.tar.gz -O badwolf_1.4.0.orig.tar.gz  
 tar xf badwolf_1.4.0.orig.tar.gz                                                                       
