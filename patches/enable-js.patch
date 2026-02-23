@@ -1,0 +1,12 @@
+Enable Javascript when starting from desktop file
+--- a/badwolf.desktop
++++ b/badwolf.desktop
+@@ -9,7 +9,7 @@
+ Comment[fr]=Un navigateur web minimaliste et orienté vers le respect de la vie privée
+ Comment[sr]=Минималистички веб читач посвећен приватности
+ Comment[tr]=Sadelik ve gizlilik odaklı web tarayıcısı
+-Exec=badwolf %U
++Exec=badwolf -S %U
+ GenericName=Web Browser
+ GenericName[fr]=Navigateur Web
+ GenericName[sr]=Веб читач
